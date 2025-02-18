@@ -662,9 +662,7 @@ footer {
     }
 }
 
-/*--------------------------------
-	PAGE TOP
---------------------------------*/
+/***** PAGE TOP *****/
 
 .pagetop {
     position: fixed;
@@ -683,11 +681,4 @@ footer {
         right: 20px;
         bottom: 20px;
     }
-}
-
-/*--------------------------------
-	lightbox調整
---------------------------------*/
-.lb-data .lb-number {
-    display: none !important;
 }
