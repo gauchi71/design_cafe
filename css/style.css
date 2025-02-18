@@ -51,9 +51,7 @@ img {
     border: none;
 }
 
-/*--------------------------------
-	汎用・共通
---------------------------------*/
+/***** 共通 *****/
 
 section {
     padding-top: 100px;
@@ -63,6 +61,10 @@ section h2 {
     margin: 0 auto 40px;
 }
 
+.sp_br {
+    display: none;
+}
+
 @media screen and (max-width: 767px) {
     section {
         padding-top: 40px;
@@ -70,17 +72,12 @@ section h2 {
     section h2 {
         margin: 0 auto 15px;
     }
-}
-
-@media screen and (min-width: 768px) {
-    .sp_only {
-        display: none;
+    .sp_br {
+        display: block;
     }
 }
 
-/*--------------------------------
-	ヘッダー
---------------------------------*/
+/***** ヘッダー *****/
 
 .header_wrap {
     display: flex;
@@ -188,7 +185,7 @@ section h2 {
         transform: rotate(135deg);
     }
 
-    /* ハンバーガーメニュー */
+    /* SPメニュー */
     .sp_nav {
         position: absolute;
         top: 0;
@@ -271,9 +268,7 @@ main {
     transform: rotate(45deg);
 }
 
-/*--------------------------------
-	リード文
---------------------------------*/
+/***** リード文 *****/
 
 .lead {
     padding: 100px 0 0 0;
@@ -298,7 +293,7 @@ main {
     letter-spacing: 0.1em;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1100px) {
     .lead p:nth-child(2) {
         font-size: 67px;
     }
@@ -331,9 +326,7 @@ main {
     }
 }
 
-/*--------------------------------
-	ABOUT US
---------------------------------*/
+/***** ABOUT ******/
 
 .about {
     position: relative;
@@ -359,14 +352,6 @@ main {
     padding-left: 10px;
 }
 
-/* .about_text .about_img {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 50%;
-    transform: translateY(-50%);
-} */
-
 .about_img_sp {
     display: none;
 }
@@ -389,7 +374,7 @@ main {
     line-height: 1.6;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1100px) {
     .about_catch {
         font-size: 36px;
     }
@@ -437,9 +422,7 @@ main {
     }
 }
 
-/*--------------------------------
-	MENU
---------------------------------*/
+/***** MENU *****/
 
 .menu {
     max-width: 1000px;
@@ -511,9 +494,7 @@ main {
     }
 }
 
-/*--------------------------------
-	GALLERY
---------------------------------*/
+/***** GALLERY *****/
 .gallery h2 {
     width: 245px;
 }
@@ -530,9 +511,7 @@ main {
     }
 }
 
-/*--------------------------------
-	EVENT
---------------------------------*/
+/***** EVENT *****/
 .event {
     max-width: 1000px;
     margin: 0 auto;
@@ -608,9 +587,7 @@ main {
     }
 }
 
-/*--------------------------------
-	ACCESS
---------------------------------*/
+/***** ACCESS *****/
 .access h2 {
     width: 213px;
 }
@@ -630,9 +607,7 @@ main {
     }
 }
 
-/*--------------------------------
-	フッター
---------------------------------*/
+/***** フッター *****/
 
 footer {
     padding: 76px 0;
